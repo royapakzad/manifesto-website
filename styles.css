@@ -298,45 +298,134 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
-        padding: 0 20px;
+        padding: 0 15px;
     }
 
     .nav-container {
-        padding: 15px 20px;
+        padding: 10px 15px;
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
     }
 
     .nav-links {
-        gap: 20px;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .hero {
-        padding: 100px 20px 40px;
+        padding: 80px 15px 40px;
+        min-height: auto;
+    }
+
+    .hero-content {
+        max-width: 100%;
     }
 
     .hero-logo {
-        width: 200px;
+        width: 180px;
+        margin-bottom: 20px;
     }
 
     .hero h1 {
-        font-size: 36px;
+        font-size: 28px;
+        line-height: 1.2;
+        margin-bottom: 15px;
     }
 
-    section {
-        padding: 40px 0;
+    .hero-subtitle {
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+
+    .cta-button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    /* Content pages mobile fixes */
+    .manifesto-page,
+    .about-page,
+    .support-page {
+        padding: 80px 0 60px;
+    }
+
+    .manifesto-page h1,
+    .about-page h1,
+    .support-page h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+        padding: 0 15px;
     }
 
     .manifesto-content,
     .about-content,
     .support-content {
-        padding: 0 20px;
+        padding: 0 15px;
+    }
+
+    .manifesto-content h3,
+    .about-content h3 {
+        font-size: 20px;
+        margin: 30px 0 15px;
+    }
+
+    .manifesto-content p,
+    .about-content p,
+    .support-content p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .manifesto-principles li {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+        padding-left: 15px;
+    }
+
+    .about-description {
+        font-size: 16px;
+        margin: 30px 0 40px;
+    }
+
+    .initiator {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+
+    .initiator h4 a {
+        font-size: 16px;
+    }
+
+    .initiator p {
+        font-size: 14px;
+    }
+
+    .manifesto-actions,
+    .about-actions,
+    .support-actions {
+        margin-top: 40px;
+        padding: 0 15px;
+    }
+
+    .manifesto-actions .cta-button,
+    .about-actions .cta-button,
+    .support-actions .cta-button {
+        margin: 5px;
+        display: block;
+        margin-bottom: 10px;
     }
 
     .footer-content {
         flex-direction: column;
         gap: 15px;
         text-align: center;
+    }
+
+    footer {
+        padding: 20px 0 15px;
     }
 }
 
