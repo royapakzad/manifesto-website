@@ -32,39 +32,38 @@
                 <h1>Who We Are</h1>
 
                 <div class="about-content">
-                    <p>
-                        The Iranian Women's Coalition for Internet Freedom is a collective of advocates, activists, and digital rights defenders
-                        working to ensure free and unrestricted access to the internet for all people.
-                    </p>
-                    <p>
-                        We believe that internet freedom is a fundamental human right and essential for democracy, education,
-                        economic development, and social progress. Our mission is to challenge censorship, promote digital literacy,
-                        and advocate for policies that protect online freedom and privacy.
+                    <p class="about-description">
+                        We are researchers, technologists, and activists for a free, open, and rights-respecting internet — for Iran and for all marginalised communities.
                     </p>
 
-                    <h3>Our Mission</h3>
-                    <p>
-                        The coalition is led by Iranian women who speak from the positionality of a group that faces systematic legal,
-                        political, and social discrimination. Recognizing that restrictions on internet access disproportionately harm
-                        women and other marginalized communities—by limiting their ability to organize, document abuses, access information,
-                        and participate in public life—the coalition challenges the Iranian government's power to disconnect, censor,
-                        and surveil people and to cut them off from the global internet.
-                    </p>
+                    <h3>Initiated by</h3>
 
-                    <h3>Our Approach</h3>
-                    <p>
-                        Grounded in the belief that access to the global internet is a fundamental human right, the coalition calls for
-                        an open, free, and rights-respecting internet for all, especially those most marginalized. We advocate for open
-                        and safe internet connectivity for the people of Iran—connectivity that is not controlled by the state or subject
-                        to selective interference, throttling, or shutdowns.
-                    </p>
+                    <div class="initiators">
+                        <div class="initiator">
+                            <h4><a href="https://www.linkedin.com/in/azadeh-akbari-b482a7241/" target="_blank" rel="noopener noreferrer">Azadeh Akbari</a></h4>
+                            <p>Professor of Critical Data & Surveillance Studies, Goethe University Frankfurt</p>
+                        </div>
 
-                    <h3>Woman, Life, Freedom</h3>
-                    <p>
-                        We consider this initiative as part of Woman, Life, Freedom—an intersectional resistance movement that imagines
-                        a life without oppression and fear for all. Our experience has taught us that when voices are silenced, imagining
-                        a different future becomes an act of resistance.
-                    </p>
+                        <div class="initiator">
+                            <h4><a href="https://www.linkedin.com/in/mahsa-alimardani-39a8b5b8/" target="_blank" rel="noopener noreferrer">Mahsa Alimardani</a></h4>
+                            <p>Associate Director, Technology Threats & Opportunities, <a href="https://www.witness.org/" target="_blank" rel="noopener noreferrer">WITNESS</a></p>
+                        </div>
+
+                        <div class="initiator">
+                            <h4><a href="https://www.linkedin.com/in/farzaneh-badiei-phd-768224b5/" target="_blank" rel="noopener noreferrer">Farzaneh Badiei</a></h4>
+                            <p>Internet Freedom Researcher & Founder, <a href="https://digitalmedusa.org/" target="_blank" rel="noopener noreferrer">Digital Medusa</a></p>
+                        </div>
+
+                        <div class="initiator">
+                            <h4><a href="https://www.linkedin.com/in/rpakzad/" target="_blank" rel="noopener noreferrer">Roya Pakzad</a></h4>
+                            <p>Founder, <a href="https://taraazresearch.org/" target="_blank" rel="noopener noreferrer">Taraaz</a></p>
+                        </div>
+
+                        <div class="initiator">
+                            <h4><a href="https://www.de-center.net/aboutus" target="_blank" rel="noopener noreferrer">Afsaneh Rigot</a></h4>
+                            <p>Founder & Principal Researcher, <a href="https://www.de-center.net/" target="_blank" rel="noopener noreferrer">De|Center</a></p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="about-actions">
@@ -79,7 +78,6 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="assets/images/logo.png" alt="Logo">
                     <p>Iranian Women's Coalition for Internet Freedom</p>
                 </div>
                 <div class="footer-social">
@@ -90,9 +88,6 @@
                         Follow us on Instagram
                     </a>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Iranian Women's Coalition for Internet Freedom. Fighting for digital rights and internet freedom.</p>
             </div>
         </div>
     </footer>
@@ -106,6 +101,18 @@
             } else {
                 header.classList.remove('scrolled');
             }
+        });
+
+        // Ensure navigation works properly
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-links a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (this.getAttribute('href').startsWith('#')) {
+                        e.preventDefault();
+                    }
+                });
+            });
         });
     </script>
 </body>

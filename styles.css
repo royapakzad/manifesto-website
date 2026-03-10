@@ -130,6 +130,11 @@ header {
     margin-bottom: 30px;
 }
 
+/* Homepage specific - more space before footer */
+.hero {
+    margin-bottom: 120px;
+}
+
 .cta-button {
     display: inline-block;
     padding: 16px 32px;
@@ -200,6 +205,48 @@ section h2 {
     margin: 40px 0 20px;
 }
 
+/* Manifesto bullet points styling */
+.manifesto-principles {
+    margin: 30px 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.manifesto-principles li {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    padding-left: 20px;
+    position: relative;
+}
+
+.manifesto-principles li:before {
+    content: "•";
+    color: var(--primary-color);
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.manifesto-paragraph {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Manifesto initiated by links */
+.manifesto-content ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.manifesto-content ul li a:hover {
+    color: var(--red-color);
+}
+
 .support-content ul {
     margin: 20px 0;
     padding-left: 20px;
@@ -226,18 +273,6 @@ footer {
     margin-bottom: 20px;
 }
 
-.footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.footer-logo img {
-    height: 30px;
-    width: auto;
-    filter: brightness(0) invert(1);
-}
-
 .footer-logo p {
     font-weight: 400;
     font-size: 12px;
@@ -259,16 +294,6 @@ footer {
     color: var(--red-color);
 }
 
-.footer-bottom {
-    border-top: 1px solid #333;
-    padding-top: 15px;
-    text-align: center;
-}
-
-.footer-bottom p {
-    color: #999;
-    font-size: 11px;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -374,6 +399,61 @@ a {
     line-height: 1.7;
     margin-bottom: 12px;
     color: var(--text-color);
+}
+
+/* Who We Are page styling */
+.about-description {
+    font-size: 18px;
+    font-style: normal;
+    color: var(--text-color);
+    margin: 40px 0 50px;
+    line-height: 1.7;
+}
+
+.initiators {
+    margin-top: 30px;
+}
+
+.initiator {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.initiator:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.initiator h4 {
+    margin-bottom: 5px;
+}
+
+.initiator h4 a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.initiator h4 a:hover {
+    color: var(--red-color);
+}
+
+.initiator p {
+    color: var(--text-light);
+    font-size: 18px;
+    margin: 0;
+}
+
+.initiator p a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.initiator p a:hover {
+    color: var(--red-color);
 }
 
 .cta-button.secondary {
