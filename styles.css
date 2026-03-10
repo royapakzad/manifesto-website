@@ -352,7 +352,7 @@ footer {
     .manifesto-page,
     .about-page,
     .support-page {
-        padding: 180px 0 60px;
+        padding: 120px 0 80px;
     }
 
     .manifesto-page h1,
@@ -448,7 +448,7 @@ a {
 .manifesto-page,
 .about-page,
 .support-page {
-    padding: 120px 0 80px;
+    padding: 140px 0 100px;
     background: #fff;
 }
 
