@@ -302,9 +302,9 @@ footer {
     }
 
     .nav-container {
-        padding: 10px 15px;
+        padding: 5px 15px;
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
     }
 
     .nav-links {
@@ -319,7 +319,7 @@ footer {
     }
 
     .hero {
-        padding: 120px 15px 40px;
+        padding: 100px 15px 40px;
         min-height: auto;
     }
 
