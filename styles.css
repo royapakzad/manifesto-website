@@ -94,7 +94,7 @@ header {
     justify-content: center;
     text-align: center;
     background: #fff;
-    padding: 100px 40px 40px;
+    padding: 140px 40px 40px;
 }
 
 .hero-content {
@@ -319,7 +319,7 @@ footer {
     }
 
     .hero {
-        padding: 80px 15px 40px;
+        padding: 120px 15px 40px;
         min-height: auto;
     }
 
